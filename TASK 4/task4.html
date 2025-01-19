@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="4style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <input type="datetime-local" id="taskDateTime">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div class="task-filters">
+            <button onclick="filterTasks('all')" class="active">All</button>
+            <button onclick="filterTasks('active')">Active</button>
+            <button onclick="filterTasks('completed')">Completed</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="s4cript.js"></script>
+</body>
+</html>
